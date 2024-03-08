@@ -1,9 +1,9 @@
 
 <template>
-  <div v-if="this.slides && this.slides.active" id="carouselIndicators" class="carousel slide container mt-5" data-ride="carousel">
+  <div v-if="this.slides && this.slides.active" id="carouselIndicators" class="carousel slide container mt-5 p-0" data-ride="carousel">
     <ol class="carousel-indicators">
       <div v-for="(slide, index) in slides.media" :key="index">
-        <li data-bs-target="#carouselIndicators" :data-bs-slide-to="index" :class="index === 0 ? 'active' : ''" class="ms-2"></li>
+        <li data-bs-target="#carouselIndicators" :data-bs-slide-to="index" :class="index === 0 ? 'active' : ''" class="d-block ms-2"></li>
       </div>
     </ol>
     <div class="carousel-inner rounded-2">
@@ -37,8 +37,8 @@ export default {
         media: [
           {
             id:"slide-1",
-            img_mobile_url:"https://as2.ftcdn.net/v2/jpg/04/19/05/65/1000_F_419056526_SHjq8zHkChwTTewj7gH0AqsRZ267X8Gp.jpg",
-            img_url: "https://as2.ftcdn.net/v2/jpg/04/19/05/65/1000_F_419056526_SHjq8zHkChwTTewj7gH0AqsRZ267X8Gp.jpg"
+            img_mobile_url:"https://all.accor.com/magazine/imagerie/futuristicheskaya-astana-2-6c5e.jpg",
+            img_url: "https://cdn-kz.kursiv.media/wp-content/uploads/2023/07/astana-avtor-evgeniy-gorbunov-1024x683.jpg"
           },
           {
             id:"slide-2",
@@ -47,13 +47,13 @@ export default {
           },
           {
             id:"slide-3",
-            img_mobile_url:"https://all.accor.com/magazine/imagerie/futuristicheskaya-astana-2-6c5e.jpg",
-            img_url: "https://cdn-kz.kursiv.media/wp-content/uploads/2023/07/astana-avtor-evgeniy-gorbunov-1024x683.jpg"
+            img_mobile_url:"https://www.advantour.com/img/kazakhstan/astana/public-transport-nur-sultan.jpg",
+            img_url: "https://www.advantour.com/img/kazakhstan/astana/public-transport-nur-sultan.jpg"
           },
           {
             id:"slide-4",
-            img_mobile_url:"https://all.accor.com/magazine/imagerie/futuristicheskaya-astana-2-6c5e.jpg",
-            img_url: "https://cdn-kz.kursiv.media/wp-content/uploads/2023/07/astana-avtor-evgeniy-gorbunov-1024x683.jpg"
+            img_mobile_url:"https://www.advantour.com/img/kazakhstan/tours/astana-tour/astana-city-tour1.jpg",
+            img_url: "https://www.advantour.com/img/kazakhstan/tours/astana-tour/astana-city-tour1.jpg"
           }
         ]
       }
