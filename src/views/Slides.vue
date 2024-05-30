@@ -11,9 +11,9 @@
            :key="index"
            :class="index === 0 ? 'carousel-item active' : 'carousel-item'"
            class="carousel-inner-content">
-        <div class="d-flex align-items-center h-100 slide-wrap">
+        <div class="d-flex justify-content-center h-100 slide-wrap">
           <img v-if="isMobile()" class="w-100 h-auto slide-img" :src="slide.img_mobile_url" :alt="slide.id" />
-          <img v-else class="w-100 h-auto slide-img" :src="slide.img_url" :alt="slide.id" />
+          <img v-else class="h-auto slide-img" :src="slide.img_url" :alt="slide.id" />
         </div>
       </div>
     </div>
@@ -37,23 +37,23 @@ export default {
         media: [
           {
             id:"slide-1",
-            img_mobile_url:"https://all.accor.com/magazine/imagerie/futuristicheskaya-astana-2-6c5e.jpg",
-            img_url: "https://cdn-kz.kursiv.media/wp-content/uploads/2023/07/astana-avtor-evgeniy-gorbunov-1024x683.jpg"
+            img_mobile_url:"https://upload.wikimedia.org/wikipedia/ru/3/31/%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0%2C_%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B5%D1%87%D0%B5%D1%82%D1%8C_%D1%81_%D1%83%D0%B3%D0%BB%D0%B0.jpg",
+            img_url: "https://upload.wikimedia.org/wikipedia/ru/3/31/%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0%2C_%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B5%D1%87%D0%B5%D1%82%D1%8C_%D1%81_%D1%83%D0%B3%D0%BB%D0%B0.jpg"
           },
           {
             id:"slide-2",
-            img_mobile_url:"https://all.accor.com/magazine/imagerie/futuristicheskaya-astana-2-6c5e.jpg",
-            img_url: "https://media.cnn.com/api/v1/images/stellar/prod/120709021722-eye-on-kazakhstan-astana.jpg?q=w_2700,h_1776,x_0,y_0,c_fill/h_618"
+            img_mobile_url:"https://photos.wikimapia.org/p/00/03/08/00/00_big.jpg",
+            img_url: "https://photos.wikimapia.org/p/00/03/08/00/00_big.jpg"
           },
           {
             id:"slide-3",
-            img_mobile_url:"https://www.advantour.com/img/kazakhstan/astana/public-transport-nur-sultan.jpg",
-            img_url: "https://www.advantour.com/img/kazakhstan/astana/public-transport-nur-sultan.jpg"
+            img_mobile_url:"https://preview.redd.it/ogmpb8sy45b81.jpg?width=1080&crop=smart&auto=webp&s=a28854a450c393b1ce3aaa7dd11f3e78e14935e5",
+            img_url: "https://preview.redd.it/ogmpb8sy45b81.jpg?width=1080&crop=smart&auto=webp&s=a28854a450c393b1ce3aaa7dd11f3e78e14935e5"
           },
           {
             id:"slide-4",
-            img_mobile_url:"https://www.advantour.com/img/kazakhstan/tours/astana-tour/astana-city-tour1.jpg",
-            img_url: "https://www.advantour.com/img/kazakhstan/tours/astana-tour/astana-city-tour1.jpg"
+            img_mobile_url:"https://tengrinews.kz/userdata/gallery/2022/gallery_1467/resize/photo_36766.jpeg",
+            img_url: "https://tengrinews.kz/userdata/gallery/2022/gallery_1467/resize/photo_36766.jpeg"
           }
         ]
       }
@@ -69,8 +69,12 @@ methods: {
 
 <style scoped>
 .carousel-inner-content {
-height: 300px;
+height: 400px;
+width: 800px;
 object-fit: cover;
+}
+.slide-img{
+  width: 550px;
 }
 .carousel-control {
 width: 50px;
