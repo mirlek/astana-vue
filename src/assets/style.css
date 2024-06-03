@@ -1,10 +1,21 @@
-/* Подключение шрифта Comfortaa */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
-/* Использование шрифта Comfortaa с конкретными значениями */
 .comfortaa-font {
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400; /* Замените <weight> на конкретное значение, например, 400 */
+  font-weight: 400; 
   font-style: normal;
+}
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+  font-family: "Comfortaa", sans-serif;
+}
+#app{
+  background: #f9f9f9;
 }

@@ -1,12 +1,20 @@
+<template>
+  <CanvasJSChart :options="options" :styles="styleOptions"/>
+</template>   
+
 <script>
+ import CanvasJSChart from '@canvasjs/vue-charts';
+
   export default {
+    name: 'my-populationpiechart',
     data() {
       return {
         options: {
           theme: "light2",
           animationEnabled: true,
+          backgroundColor: "#f9f9f9",       
           title:{
-            text: "Visitors By Channel"
+            text: "Population"
           },
           data: [{
             type: "pie",
@@ -14,23 +22,20 @@
             yValueFormatString: "#,##0",
             toolTipContent: "<span style='\"'color: {color};'\"'>{label}</span> {y}(#percent%)",
             dataPoints: [
-              { label: "Organic Traffic", y: 130631 },
-              { label: "Direct", y: 28874 },
-              { label: "Referral", y: 15467 },
-              { label: "Social", y: 10543 },
-              { label: "Email", y: 5613 },
-              { label: "Others", y: 8492 }
+              { label: 'Kazakh', y: 79.1  },
+              { label: 'Russian', y: 12.85  },
+              { label: 'Ukrainian', y: 1.32 },
+              { label: 'Tatar', y: 1.08  },
+              { label: 'Uzbek', y: 0.96  },
+              { label: 'Other', y: 4.65 }
             ]
           }]
         },
         styleOptions: {
           width: "100%",
-          height: "360px"
+          height: "360px",
         }
       }
     }
   }
 </script>
-<template>
-  <CanvasJSChart :options="options" :styles="styleOptions"/>
-</template>                              
