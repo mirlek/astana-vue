@@ -22,22 +22,7 @@
     </div>
     <div>
       <p>Состав населения</p>
-      <div v-for="(pop, index) in population" :key="index" class="d-inline-flex m-2">
-        <round-slider
-          v-model="pop.value"
-          :start-angle="pop.startAngle"
-          :end-angle="pop.endAngle"
-          line-cap="round"
-          :radius="pop.radius"
-          :editableTooltip="false"
-          readOnly="true"
-          :max="pop.max"
-          :step="pop.step"
-        />
-       </div> 
-       <div>
-       <my-population></my-population>
-      </div>
+      <my-roundslider></my-roundslider>
     </div>
     
     <div class="d-flex justify-content-center align-items-center">
@@ -57,54 +42,42 @@
 
 <script>
 import MySlides from './Slides.vue'
-require('@/assets/style.css')
-import RoundSlider from 'vue-round-slider'
-import MyPopulation from './PopulationPieChart.vue'
+import '@/assets/style.css'
+import MyRoundSlider from './RoundSlider'
 
 export default {
   name: "HomeView",
+  components: { MySlides, MyRoundSlider },
   data() {
     return {
-      sliderValue: 60,
-      population: [
-        { label: 'kz', value: 79.1, startAngle: 315, endAngle: 315, radius: 80, },
-        { label: 'ru', value: 12.85, startAngle: 315, endAngle: 315, radius: 80 },
-        { label: 'uk', value: 1.32, startAngle: 315, endAngle: 315, radius: 80, max: 10, step: 0.01 },
-        { label: 'ta', value: 1.08, startAngle: 315, endAngle: 315, radius: 80, max: 10, step: 0.01 },
-        { label: 'uz', value: 0.96, startAngle: 315, endAngle: 315, radius: 80, max: 10, step: 0.01 },
-        { label: 'other', value: 4.65, startAngle: 315, endAngle: 315, radius: 80, max: 10, step: 0.01 }
-      ]
+
     }
   },
-  components: { MySlides, RoundSlider, MyPopulation },
-  methods: {
-  }
 }
 </script>
 
 <style scoped>
-  .main-banner {
-    position: relative;
-    height: 700px;
-    overflow: hidden;
-  }
-  .main-banner img {
-    object-fit: cover; 
-  }
-  .map-img{
-    width: 100%;
-    height: 400px;
-  }
-  #jan-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: Comfortaa;
-  }
-  .info{
-    text-align: left;
-  }
-
+.main-banner {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
+.main-banner img {
+  object-fit: cover; 
+}
+.map-img {
+  width: 100%;
+  height: 400px;
+}
+#jan-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Comfortaa;
+}
+.info {
+  text-align: left;
+}
 </style>
