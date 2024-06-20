@@ -32,7 +32,7 @@
           }]
         },
         styleOptions: {
-          width: "100%",
+          width: "80%",
           height: "360px",
         }
       }
