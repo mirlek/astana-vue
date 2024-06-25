@@ -7,6 +7,9 @@
         <button class="btn btn-primary">Узнать больше</button>
       </div>
     </div>
+    <div>
+      <my-stories></my-stories>
+    </div>
     <div class="info mt-4 p-4 border border-success rounded-5 h5 text-start">
       <div class="h5 text-center"> <b>ABOUT</b></div>
 
@@ -114,11 +117,7 @@
         </p>
       </div>
       <my-slides></my-slides>
-    </div>
-    <div>
-      <my-stories></my-stories>
-    </div>
-   
+    </div>   
   </div>
 </template>
 

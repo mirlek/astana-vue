@@ -31,127 +31,114 @@ export default {
     storiesModal: [],
     module: {
       stories: [
-        {
+      {
           story: [
             {
-              url: "https://as2.ftcdn.net/v2/jpg/04/19/05/65/1000_F_419056526_SHjq8zHkChwTTewj7gH0AqsRZ267X8Gp.jpg",
-              type: "image",
-            },
-            {
-              url: "https://media.istockphoto.com/id/1394778917/photo/pizza-margherita.jpg?s=612x612&w=0&k=20&c=Irgh8Af3U4tzQNJ8XYfWY9-kCRWn4ibGsIkJiqIfLr8=",
-              type: "image",
-            },
-            {
-              url:  "https://foodal.com/wp-content/uploads/2021/01/Nacho-Pizza-Pin.jpg",
-              type: "image",
-            },
-            {
-              url: "https://file-examples-com.github.io/5mb.mp4",
+              url: require('@/assets/video_view_4.mp4'),
               type: "video",
             },
           ],
-          thumbnail: "https://img.freepik.com/premium-vector/pizza-pizzeria-italian-vertical-flyer-with-ingredients-text-fast-food-top-view_114352-189.jpg?w=2000",
+          thumbnail: require('@/assets/view_3.jpg'),    
         },
         {
           story: [
             {
-              url: "https://as2.ftcdn.net/v2/jpg/04/19/05/65/1000_F_419056526_SHjq8zHkChwTTewj7gH0AqsRZ267X8Gp.jpg",
+              url: require('@/assets/view_9.jpg'),
               type: "image",
             },
             {
-              url: "https://media.istockphoto.com/id/1394778917/photo/pizza-margherita.jpg?s=612x612&w=0&k=20&c=Irgh8Af3U4tzQNJ8XYfWY9-kCRWn4ibGsIkJiqIfLr8=",
+              url: require('@/assets/view_8.jpg'),
               type: "image",
             },
             {
-              url: "https://file-examples-com.github.io/5mb.mp4",
-              type: "video",
+              url: require('@/assets/view_3.jpg'),
+              type: "image",
+            },
+            {
+              url: require('@/assets/view_4.jpg'),
+              type: "image",
+            },
+            {
+              url: require('@/assets/view_5.jpg'),
+              type: "image",
             },
           ],
-          thumbnail: "https://img.freepik.com/premium-vector/pizza-pizzeria-italian-vertical-flyer-with-ingredients-text-fast-food-top-view_114352-189.jpg?w=2000",
+          thumbnail: require('@/assets/view_9.jpg'),
         },
         {
           story: [
             {
-              url: "https://as2.ftcdn.net/v2/jpg/04/19/05/65/1000_F_419056526_SHjq8zHkChwTTewj7gH0AqsRZ267X8Gp.jpg",
-              type: "image",
-            },
-            {
-              url: "https://media.istockphoto.com/id/1394778917/photo/pizza-margherita.jpg?s=612x612&w=0&k=20&c=Irgh8Af3U4tzQNJ8XYfWY9-kCRWn4ibGsIkJiqIfLr8=",
-              type: "image",
-            },
-            {
-              url:  "https://foodal.com/wp-content/uploads/2021/01/Nacho-Pizza-Pin.jpg",
-              type: "image",
-            },
-            {
-              url: "https://file-examples-com.github.io/5mb.mp4",
+              url: require('@/assets/video_dance.mp4'),
               type: "video",
             },
           ],
-          thumbnail: "https://media.istockphoto.com/id/1394778917/photo/pizza-margherita.jpg?s=612x612&w=0&k=20&c=Irgh8Af3U4tzQNJ8XYfWY9-kCRWn4ibGsIkJiqIfLr8=",
+          thumbnail: require('@/assets/view_13.jpg'),    
         },
         {
           story: [
             {
-              url: "https://foodal.com/wp-content/uploads/2021/01/Nacho-Pizza-Pin.jpg",
+              url: require('@/assets/img_food_1.jpg'),
               type: "image",
             },
             {
-              url: "https://media.istockphoto.com/id/1394778917/photo/pizza-margherita.jpg?s=612x612&w=0&k=20&c=Irgh8Af3U4tzQNJ8XYfWY9-kCRWn4ibGsIkJiqIfLr8=",
+              url: require('@/assets/img_food_2.jpg'),
               type: "image",
-            },
-            {
-              url:  "https://foodal.com/wp-content/uploads/2021/01/Nacho-Pizza-Pin.jpg",
-              type: "image",
-            },
-            {
-              url: "https://file-examples-com.github.io/5mb.mp4",
-              type: "video",
             },
           ],
-          thumbnail: "https://foodal.com/wp-content/uploads/2021/01/Nacho-Pizza-Pin.jpg",
+          thumbnail: require('@/assets/img_food_2.jpg'),
         },
         {
           story: [
             {
-              url: "https://foodal.com/wp-content/uploads/2021/01/Nacho-Pizza-Pin.jpg",
+              url: require('@/assets/view_1.jpg'),
               type: "image",
             },
             {
-              url: "https://media.istockphoto.com/id/1394778917/photo/pizza-margherita.jpg?s=612x612&w=0&k=20&c=Irgh8Af3U4tzQNJ8XYfWY9-kCRWn4ibGsIkJiqIfLr8=",
+              url: require('@/assets/view_2.jpg'),
               type: "image",
-            },
-            {
-              url:  "https://media.istockphoto.com/id/1358406303/photo/close-up-image-of-sliced-pepperoni-pizza-on-round-wooden-chopping-board-and-margherita-on.jpg?s=612x612&w=0&k=20&c=LFJtB89-oFX2ZqTiHOUBHS9Eoel4SHEKF2YvUaUo67o=",
-              type: "image",
-            },
-            {
-              url: "https://file-examples-com.github.io/5mb.mp4",
-              type: "video",
             },
           ],
-          thumbnail: "https://media.istockphoto.com/id/1358406303/photo/close-up-image-of-sliced-pepperoni-pizza-on-round-wooden-chopping-board-and-margherita-on.jpg?s=612x612&w=0&k=20&c=LFJtB89-oFX2ZqTiHOUBHS9Eoel4SHEKF2YvUaUo67o=",
+          thumbnail: require('@/assets/view_1.jpg'),
         },
         {
           story: [
             {
-              url: "https://foodal.com/wp-content/uploads/2021/01/Nacho-Pizza-Pin.jpg",
-              type: "image",
-            },
-            {
-              url: "https://media.istockphoto.com/id/1394778917/photo/pizza-margherita.jpg?s=612x612&w=0&k=20&c=Irgh8Af3U4tzQNJ8XYfWY9-kCRWn4ibGsIkJiqIfLr8=",
-              type: "image",
-            },
-            {
-              url:  "https://media.istockphoto.com/id/1358406303/photo/close-up-image-of-sliced-pepperoni-pizza-on-round-wooden-chopping-board-and-margherita-on.jpg?s=612x612&w=0&k=20&c=LFJtB89-oFX2ZqTiHOUBHS9Eoel4SHEKF2YvUaUo67o=",
-              type: "image",
-            },
-            {
-              url: "https://file-examples-com.github.io/5mb.mp4",
+              url: require('@/assets/video_view_3.mp4'),
               type: "video",
             },
           ],
-          thumbnail: "https://media.istockphoto.com/id/1358406303/photo/close-up-image-of-sliced-pepperoni-pizza-on-round-wooden-chopping-board-and-margherita-on.jpg?s=612x612&w=0&k=20&c=LFJtB89-oFX2ZqTiHOUBHS9Eoel4SHEKF2YvUaUo67o=",
+          thumbnail: require('@/assets/view_6.jpg'),    
+        },
+        {
+          story: [
+            {
+              url: require('@/assets/video_view_2.mp4'),
+              type: "video",
+            },
+          ],
+          thumbnail: require('@/assets/view_12.jpg'),    
+        },
+        {
+          story: [
+            {
+              url: require('@/assets/video_view_1.mp4'),
+              type: "video",
+            },
+          ],
+          thumbnail: require('@/assets/view_11.jpg'),    
+        },
+        {
+          story: [
+            {
+              url: require('@/assets/video_concert.mp4'),
+              type: "video",
+            },
+            {
+              url: require('@/assets/video_scene.mp4'),
+              type: "video",
+            },
+          ],
+          thumbnail: require('@/assets/view_14.jpg'),    
         },
       ]
     },
