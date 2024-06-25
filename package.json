@@ -17,6 +17,8 @@
     "register-service-worker": "^1.7.2",
     "vue": "^3.4.27",
     "vue-apexcharts": "^1.6.2",
+    "vue-horizontal": "^1.0.2",
+    "vue-insta-stories": "^0.9.8",
     "vue-number-animation": "^2.0.2",
     "vue-round-slider": "^1.0.1",
     "vue-router": "^4.3.2",

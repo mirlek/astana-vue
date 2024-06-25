@@ -115,6 +115,9 @@
       </div>
       <my-slides></my-slides>
     </div>
+    <div>
+      <my-stories></my-stories>
+    </div>
    
   </div>
 </template>
@@ -124,10 +127,12 @@ import MySlides from './Slides.vue';
 import MyRoundSlider from './PopRoundSlider.vue';
 import MyPopulationPieChart from './PopulationPieChart.vue';
 import NumberAnimation from "vue-number-animation";
+import MyStories from './StoriesPack.vue';
+
 
 export default {
   name: "HomeView",
-  components: { MySlides, MyRoundSlider, MyPopulationPieChart, NumberAnimation },
+  components: { MySlides, MyRoundSlider, MyPopulationPieChart, NumberAnimation, MyStories },
   data() {
     return {
       items: [
