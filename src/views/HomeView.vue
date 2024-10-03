@@ -1,7 +1,7 @@
 <template>
   <div class="about container">
     <div class="main-banner d-flex align-items-center w-100 border rounded-5">
-      <img :src="require('../../dist/img/icons/banner_img.jpg')" alt="" class="w-100 h-100">
+      <img src="@/assets/banner_img.jpg" alt="" class="w-100 h-100">
       <div class="d-flex flex-column justify-content-center align-items-center text-align-center jan-text">
         <h1>Жан журегiм, Астана</h1>
         <button class="btn btn-primary" @click="scrollToInfo">Explore the City</button>
@@ -28,7 +28,7 @@
           </p>
         </div>
         <div class="col">
-          <img :src="require('../../dist/img/icons/ast_map.png')" alt="" class="map-img">
+          <img src="@/assets/ast_map.png" alt="" class="map-img">
         </div>
       
       <!-- <div class="accordion" id="accordionPanelsStayOpenExample">
