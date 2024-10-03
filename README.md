@@ -1,9 +1,6 @@
-# astana-vue
+This is my pet-project made in Spring 2024. Here I've used Vue.js(v.3), JavaScript and Bootstrap.
 
-## Project setup
-```
-npm install
-```
+You can check the result by following - https://mirlek.github.io/astana-vue/
 
 ### Compiles and hot-reloads for development
 ```
@@ -14,11 +11,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

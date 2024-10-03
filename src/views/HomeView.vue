@@ -4,7 +4,7 @@
       <img src="\img\icons\banner_img.jpg" alt="" class="w-100 h-100">
       <div class="d-flex flex-column justify-content-center align-items-center text-align-center jan-text">
         <h1>Жан журегiм, Астана</h1>
-        <button class="btn btn-primary">Узнать больше</button>
+        <button class="btn btn-primary">Explore the City</button>
       </div>
     </div>
     <div>
