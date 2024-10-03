@@ -1,16 +1,16 @@
 <template>
   <div class="about container">
     <div class="main-banner d-flex align-items-center w-100 border rounded-5">
-      <img src="\img\icons\banner_img.jpg" alt="" class="w-100 h-100">
+      <img :src="require('../../dist/img/icons/banner_img.jpg')" alt="" class="w-100 h-100">
       <div class="d-flex flex-column justify-content-center align-items-center text-align-center jan-text">
         <h1>Жан журегiм, Астана</h1>
-        <button class="btn btn-primary">Explore the City</button>
+        <button class="btn btn-primary" @click="scrollToInfo">Explore the City</button>
       </div>
     </div>
     <div>
       <my-stories></my-stories>
     </div>
-    <div class="info mt-4 p-4 border border-success rounded-5 h5 text-start">
+    <div ref="astInfo" class="info mt-4 p-4 border border-success rounded-5 h5 text-start">
       <div class="h5 text-center"> <b>ABOUT</b></div>
 
       <div class="d-flex justify-content-center align-items-center mt-4">
@@ -28,7 +28,7 @@
           </p>
         </div>
         <div class="col">
-          <img src="\img\icons\ast_map.png" alt="" class="map-img">
+          <img :src="require('../../dist/img/icons/ast_map.png')" alt="" class="map-img">
         </div>
       
       <!-- <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -117,7 +117,12 @@
         </p>
       </div>
       <my-slides></my-slides>
-    </div>   
+    </div> 
+    
+    <div class="map-section d-flex justify-content-center mt-4 mb-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320668.6760000177!2d71.17194722307536!3d51.104326612490105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424580c47db54609%3A0x97f9148dddb19228!2sAstana%2C%20Kazakhstan!5e0!3m2!1sen!2sno!4v1727986414505!5m2!1sen!2sno" width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
   </div>
 </template>
 
@@ -158,7 +163,10 @@ export default {
     completed(index) {
       console.log(`Animation ${index + 1} ends!`);
       this.scaleClasses[index] = true;
-    }
+    },
+    scrollToInfo() {
+      this.$refs.astInfo.scrollIntoView({ behavior: 'smooth' });
+    },
   },
   mounted() {
     const observer = new IntersectionObserver(entries => {
